@@ -29,6 +29,12 @@ int send_message(char* user){
     strcat(file_path, "/");
     strcat(file_path, uuid);
 
+    char command[strlen(MESSAGE_ROOT_DIR) + strlen("mkdir -p ") + strlen(user)];
+    strcpy(command, "mkdir -p ");
+    strcat(command, MESSAGE_ROOT_DIR);
+    strcat(command, user);
+    system(command);
+
     FILE* msg = fopen(file_path, "w+");
 
     struct passwd *p = getpwuid(getuid());

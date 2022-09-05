@@ -13,3 +13,6 @@ install: all
 remove:
 	rm /usr/bin/sysmsg
 	rm -rf /usr/local/share/sysmsg/
+
+clean:
+	$(RM) -f sysmsg

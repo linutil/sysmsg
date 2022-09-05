@@ -1,0 +1,20 @@
+SYSMSG
+The system-wide open-source user-to-user messaging app.
+
+This is a very basic app, yet i'd say it is useful. It works in a simple way, so it is easy to make clients for!
+Essentially what it is all about, is writing text files in directories, that is all it does!
+
+Now, how do i use this thing? Well, first of all you've got to build and install it, for which i've set up this
+handy dandy script using a build system called GNUMake. It might work with other Make systems too, but no testing
+has been done!
+
+So, what you want to do is to open up a shell prompt in the source directory, and run "sudo make install".
+This will then create all necessary directories and copy all files, as well as building the C code!
+
+You can also build the thing by hand by running "cc main.c -o sysmsg -luuid". Feel free to replace "cc" with any
+C compiler with the same syntax as gcc.
+The software uses libuuid so you need that installed when building.
+
+This software is Copyright(c) linutil 2022, and protected under the MIT License.
+
+Have a great time!

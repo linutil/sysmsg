@@ -1,3 +1,8 @@
 sysmsg
 *.o
+
+# IDEA files
+
 .idea
+cmake-build-debug
+cmake-build-release
